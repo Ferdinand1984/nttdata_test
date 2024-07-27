@@ -1,9 +1,10 @@
 package com.nttdata.userinterfaces.store;
 
 import net.serenitybdd.screenplay.targets.Target;
+import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
-
+@DefaultUrl("https://www.demoblaze.com")
 public class StorePage extends PageObject {
 
     public static final Target LNK_PRODUCTS = Target.the("Tipo producto").locatedBy("//a[text()='{0}']");
